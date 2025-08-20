@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIPedia AutiMeal - Resep Bergizi untuk Anak Autisme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="min-h-screen">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="foto foto/SIPedia.jpeg" width="100" height="110">
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-item font-medium text-gray-700 hover:text-blue-500 py-2">Beranda</a>
+                    <a href="#recipes" class="nav-item font-medium text-gray-700 hover:text-blue-500 py-2">Resep</a>
+                    <a href="#tips" class="nav-item font-medium text-gray-700 hover:text-blue-500 py-2">Tips</a>
+                    <a href="#about" class="nav-item font-medium text-gray-700 hover:text-blue-500 py-2">Tentang Kami</a>
+                </nav>
+                <button class="md:hidden focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-blue-50 py-16">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-3xl md:text-4xl font-bold mb-4">Gizi Adaptif untuk Anak Autisme</h1>
+                <p class="text-lg mb-6">Temukan inspirasi resep modifikasi makanan lezat dan bergizi seimbang yang telah disesuaikan dengan preferensi sensorik dan tekstur makanan untuk anak</p>
+                <a href="#recipes" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition duration-300 inline-block">Telusuri Resep</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="foto foto/foto adek kecil.png" alt="Anak autis sedang makan makanan sehat" class="rounded-lg shadow-xl w-full max-w-md object-cover" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Importance Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Mengapa Pemenuhan Gizi Seimbang Penting untuk Anak Autisme?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Mendukung Perkembangan Otak</h3>
+                    <p class="text-gray-600">Asupan gizi seperti omega-3, vitamin B, dan zat besi membantu fungsi otak serta sistem saraf yang optimal</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Mencegah Defisiensi Nutrisi</h3>
+                    <p class="text-gray-600">Anak cenderung memilih-milih makanan sehingga berisiko kekurangan vitamin dan mineral penting</p>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="bg-blue-100 w-12 h-12 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold mb-2">Mendukung Sistem Imun dan Kesehatan Tubuh</h3>
+                    <p class="text-gray-600">Makanan seimbang memperkuat daya tahan tubuh dan mengurangi risiko gangguan kesehatan lainnya</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infographics Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Infografis Nutrisi untuk Anak Autisme</h2>
+            <div class="flex flex-col md:flex-row gap-8 items-center">
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="foto foto/infografis.png" alt="Infografis nutrisi anak autisme" class="rounded-lg shadow-xl w-full max-w-md object-contain">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-semibold mb-4">Fakta Penting Nutrisi untuk Anak Autisme</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-600">80% anak autisme mengalami gangguan pencernaan yang dapat diminimalisir dengan pola makan yang tepat dan seimbang.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-600">Asam lemak omega-3 terbukti mendukung perkembangan otak anak autisme.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-600">Diet bebas gluten-casein membantu 40% anak autisme mengurangi gejala hiperaktivitas dan gangguan tidur.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-600">Anak autisme cenderung pemilih dalam makanan yang dapat berisiko menyebabkan kekurangan nutrisi penting seperti serat, vitamin, zat besi, dan kalsium.</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 w-6 h-6 rounded-full flex items-center justify-center mr-3 mt-1 flex-shrink-0">
+                                <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                            </div>
+                            <p class="text-gray-600">Modifikasi penyajian buah dan sayur dapat membantu anak tertarik mencoba makanan baru yang bergizi. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Koleksi Resep Bergizi</h2>
+            
+            <!-- Recipes Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Recipe 1 -->
+                <div class="recipe-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="foto foto/nasi goreng seafood.jpg" alt="Nasi goreng seafood" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Nasi Goreng Seafood</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm mr-4">Makanan Utama</span>
+                            <!-- <span class="text-gray-500 text-sm">15 menit</span> -->
+                        </div>
+                        <p class="text-gray-600 mb-4">Nasi goreng yang kaya protein serta omega-3 dari udang dan ikan tengiri, dimasak dengan sedikit minyak dan tanpa MSG. Tekstur lembut dan rasa gurih alami dari seafood menjadikannya pilihan lezat dan bergizi.</p>
+                        <div class="flex justify-between items-center mb-4">
+                             <!-- <a href="resep1.html" class="text-blue-500 font-medium hover:text-blue-600 transition duration-300">Lihat Resep →</a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 2 -->
+                <div class="recipe-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="foto foto/Pancake Pakcoy.png" alt="pancake pakcoy" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Pancake Pakcoy</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm mr-4">Makanan Utama</span>
+                            <!-- <span class="text-gray-500 text-sm">20 menit</span> -->
+                        </div>
+                        <p class="text-gray-600 mb-4">Merupakan modifikasi makanan untuk makan pagi/sarapan sehat berbentuk panekuk berbahan dasar sayur hijau pakcoy.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <a href="resep2.html" class="text-blue-500 font-medium hover:text-blue-600 transition duration-300">Lihat Resep →</a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 3 -->
+                <div class="recipe-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="foto foto/cilok bihun.jpg" alt="cilok bihun" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Cilok Bihun Sayur</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm mr-4">Camilan</span>
+                            <!-- <span class="text-gray-500 text-sm">10 menit</span> -->
+                        </div>
+                        <p class="text-gray-600 mb-4">Versi sehat dari jajanan favorit anak-anak, dikombinasikan dengan bihun serta tambahan kol dan wortel sebagai serat dan vitamin tambahan. Teksturnya kenyal lembut dengan rasa gurih yang akrab di lidah, cocok untuk anak autisme yang menyukai makanan dengan sensasi dikunyah.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <a href="resep3.html" class="text-blue-500 font-medium hover:text-blue-600 transition duration-300">Lihat Resep →</a> --> 
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 4 -->
+                <div class="recipe-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="foto foto/potato stick.png" alt="Potato stick" class="w-full h-48 object-cover" />
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Potato Stick</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm mr-4">Camilan</span>
+                            <!-- <span class="text-gray-500 text-sm">25 menit</span> -->
+                        </div>
+                        <p class="text-gray-600 mb-4">Selain gurih, camilan ini mengandung karbohidrat untuk energi, serat untuk pencernaan, kalium untuk otot dan tekanan darah, serta vitamin C untuk daya tahan tubuh.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <a href="resep4.html" class="text-blue-500 font-medium hover:text-blue-600 transition duration-300">Lihat Resep →</a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 5 -->
+                <div class="recipe-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="foto foto/Kaldu-ayam.jpg" alt="Kaldu Ayam" class="w-full h-48 object-cover"/>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Kaldu Ayam</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm mr-4">Bahan Makanan Pengganti</span>
+                            <!-- <span class="text-gray-500 text-sm">20 menit</span> -->
+                        </div>
+                        <p class="text-gray-600 mb-4">Kaldu hangat yang kaya nutrisi dan lembut di perut. Menjadi dasar yang sempurna untuk berbagai hidangan, dengan rasa ringan dan aman bagi pencernaan sensitif.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <a href="resep5.html" class="text-blue-500 font-medium hover:text-blue-600 transition duration-300">Lihat Resep →</a> -->
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 6 -->
+                <div class="recipe-card bg-white rounded-lg overflow-hidden shadow-md transition duration-300 mb-2">
+                    <img src="foto foto/Serbuk-bawang-putih.jpg" alt="Pisang lapis selai kacang" class="w-full h-48 object-cover" />
+                <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Serbuk Bawang Putih</h3>
+                        <div class="flex items-center mb-3">
+                            <span class="text-gray-500 text-sm mr-4">Bahan Makanan Pengganti</span>
+                            <!-- <span class="text-gray-500 text-sm">25 menit</span> -->
+                        </div>
+                        <p class="text-gray-600 mb-4 text-justify">Bumbu alami dengan aroma khas yang menambah rasa gurih tanpa bahan tambahan kimia. Cocok untuk anak autisme yang sensitif terhadap rasa tajam bawang mentah, namun tetap ingin mendapatkan manfaat nutrisinya.</p>
+                        <div class="flex justify-between items-center">
+                            <!-- <a href="resep6.html" class="text-blue-500 font-medium hover:text-blue-600 transition duration-300">Lihat Resep →</a>  -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <a href="resep.html" class="bg-white text-blue-500 px-6 py-3 rounded-lg border border-blue-500 font-medium hover:bg-blue-50 transition duration-300 inline-block">Lihat Lebih Banyak Resep</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section id="tips" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl font-bold mb-8 text-center">Tips Menyajikan Makanan untuk Anak Autisme</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="mb-8">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-blue-500 font-bold">1</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Perhatikan Tekstur</h3>
+                            <p class="text-gray-600">Banyak anak autisme memiliki kepekaan terhadap tekstur tertentu. Coba variasikan tekstur makanan secara bertahap dan perhatikan reaksi mereka.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-blue-500 font-bold">2</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Sajikan Secara Visual Menarik</h3>
+                            <p class="text-gray-600">Gunakan piring dengan kompartemen terpisah atau buat penyajian kreatif seperti bento untuk menarik minat makan mereka.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-blue-500 font-bold">3</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Perkenalkan Makanan Baru Secara Bertahap</h3>
+                            <p class="text-gray-600">Perkenalkan makanan baru dalam porsi kecil bersamaan dengan makanan favorit mereka untuk memudahkan penerimaan.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-blue-500 font-bold">4</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Jaga Rutinitas Makan</h3>
+                            <p class="text-gray-600">Anak autisme sering merasa nyaman dengan rutinitas. Cobalah untuk menjaga waktu makan yang konsisten setiap hari.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mb-8">
+                    <div class="flex items-start mb-4">
+                        <div class="bg-blue-100 w-8 h-8 rounded-full flex items-center justify-center mr-4 flex-shrink-0">
+                            <span class="text-blue-500 font-bold">5</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Hindari Makanan dengan Pengawet dan Pewarna</h3>
+                            <p class="text-gray-600">Banyak anak autisme sensitif terhadap bahan tambahan makanan. Usahakan untuk menggunakan bahan alami sebanyak mungkin.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Project Section -->
+    <section id="about" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 flex justify-center">
+                    <img src="foto foto/Foto tentang proyek kami.png" alt="Tim NutriAutism" class="rounded-lg shadow-xl w-full max-w-md object-cover" />
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <h2 class="text-2xl font-bold mb-6">Ketahui Tim Kami</h2>
+                    <p class="text-gray-600 mb-4">SIPedia AutiMeal adalah inisiatif yang bertujuan untuk membantu orang tua dan pengasuh anak autisme dalam menyediakan makanan bergizi yang sesuai dengan kebutuhan anak autisme.</p>
+                    <p class="text-gray-600 mb-4">Kami bekerja sama dengan ahli gizi untuk mengembangkan resep-resep yang tidak hanya bernutrisi tinggi, tetapi juga memperhatikan aspek sensorik dan preferensi makan anak autisme.</p>
+                    <p class="text-gray-600 mb-6">Proyek ini terus dikembangkan dengan penelitian terbaru tentang hubungan antara nutrisi dan perkembangan anak dengan kebutuhan khusus.</p>
+                    <a href="TeamDevelopment.html" class="bg-blue-500 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-600 transition duration-300 inline-block">Ketahui Selengkapnya!!!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <!-- <section class="py-16 bg-blue-500 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl font-bold mb-4">Dapatkan Resep Terbaru</h2>
+            <p class="mb-8 max-w-2xl mx-auto">Berlangganan newsletter kami untuk mendapatkan resep-resep terbaru dan tips nutrisi langsung ke email Anda.</p>
+            <div class="max-w-md mx-auto flex">
+                <input type="email" placeholder="Alamat Email Anda" class="flex-grow px-4 py-3 rounded-l-lg focus:outline-none text-gray-900" />
+                <button class="bg-blue-700 px-6 py-3 rounded-r-lg font-medium hover:bg-blue-800 transition duration-300">Berlangganan</button>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">SIPedia AutiMeal</h3>
+                    <p class="text-gray-400">Menyediakan resep makanan bergizi khusus untuk anak dengan autisme.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Tautan Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Beranda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Resep</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Tentang Kami</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak</h3>
+                    <ul class="space-y-2">
+                        <li class="text-gray-400">sipediaautimeal@gmail.com</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Ikuti Kami</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.tiktok.com/@sipedia.autimeal?_t=ZS-8yBiJmdIGHN&_r=1" class="text-gray-400 hover:text-white transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.75 2c.556 0 1.084.223 1.475.615A2.084 2.084 0 0114.84 4c.006 1.031.234 1.797.68 2.348.46.566 1.2.924 2.18 1.078a.75.75 0 01.63.742v2.17a.75.75 0 01-.75.75c-.78 0-1.5-.104-2.14-.297v4.958a5.75 5.75 0 11-5.752-5.752.75.75 0 01.75.75v2.173a.75.75 0 01-.75.75 2.25 2.25 0 102.25 2.25V2.75a.75.75 0 01.75-.75z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/pkmpm.sipedia_autimeal?igsh=ZWNhcHgzbXczb2Vk" class="text-gray-400 hover:text-white transition duration-300">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 SIPedia AutiMeal. Hak Cipta Dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Category filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    // Here you would typically filter recipes
+                    // This is just for UI demonstration
+                });
+            });
+            
+            // Mobile menu toggle would go here
+        });
+    </script>
+</body>
+</html>
